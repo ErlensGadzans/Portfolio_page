@@ -9,18 +9,25 @@
 .navbar {
   position: fixed;
   width: 100%;
-  background-color: crimson;
+  /* background-color: rgba(247, 74, 57, 255); */
   font-family: "Ubuntu", sans-serif;
-  padding: 15px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  transition: 0.3s;
 }
 
-.max-width {
+.sticky {
+  padding: 30px 0;
+  background: rgba(247, 74, 57, 255);
+}
+
+.max_width {
   max-width: 1300px;
   margin: auto;
   padding: 0 80px;
 }
 
-.navbar .max-width {
+.navbar .max_width {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,6 +37,10 @@
   color: white;
   font-size: 35px;
   font-weight: 600;
+}
+
+.navbar .logo a span {
+  color: rgba(247, 74, 57, 255);
 }
 .navbar .menu li {
   /* list-style: none; */
@@ -41,4 +52,46 @@
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
+  transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+  color: rgba(247, 74, 57, 255);
+}
+
+/* Home section*/
+
+.home {
+  display: flex;
+  background: url("./img/banner.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  color: white;
+  min-height: 500px;
+  font-family: "Ubuntu", sans-serif;
+}
+.home .max_width {
+  margin: auto;
+  margin-left: 40px;
+}
+
+.home .home_content .text_1 {
+  font-size: 27px;
+}
+
+.home .home_content .text_2 {
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+
+.home .home_content .text_3 {
+  font-size: 40px;
+  margin-top: 5px;
+}
+
+.home .home_content .text_3 span {
+  color: rgba(247, 74, 57, 255);
+  font-weight: 500;
 }
