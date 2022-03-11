@@ -77,7 +77,7 @@
 
 .home {
   display: flex;
-  background: url("./img/banner.jpg") no-repeat center;
+  background: url("./img/banner.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
@@ -111,15 +111,13 @@
 
 /* Responive site*/
 
-@media (max-width: 947px) {
+@media (max-width: 900px) {
   .max_width {
     padding: 0 50px;
   }
   .menu_btn {
     display: block;
-    position: fixed;
-    top: 50px;
-    right: 50px;
+    z-index: 1;
   }
 
   .menu_btn i.active:before {
@@ -150,5 +148,46 @@
   .navbar .menu li a {
     font-size: 25px;
     margin: 20px 0;
+  }
+
+  .home .home_content .text_2 {
+    font-size: 70px;
+  }
+
+  .home .home_content .text_3 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .max-width {
+    padding: 0 23px;
+  }
+  .home .home_content .text_2 {
+    font-size: 60px;
+  }
+
+  .home .home_content .text_3 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home .home_content .text_2 {
+    font-size: 50px;
+  }
+
+  .home .home_content .text_3 {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 375px) {
+  .home .home_content .text_2 {
+    font-size: 40px;
+  }
+
+  .home .home_content .text_3 {
+    font-size: 15px;
   }
 }
