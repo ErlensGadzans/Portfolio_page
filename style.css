@@ -108,6 +108,22 @@
   color: rgba(247, 74, 57, 255);
   font-weight: 500;
 }
+.home .home_content .button {
+  display: inline-block;
+  background: rgba(247, 74, 57, 255);
+  color: white;
+  font-size: 25px;
+  padding: 12px 36px;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: 2px solid rgba(247, 74, 57, 255);
+  transition: all 0.3s ease;
+}
+
+.home .home_content .button:hover {
+  background: none;
+  color: rgba(247, 74, 57, 255);
+}
 
 /* Responive site*/
 
@@ -157,6 +173,10 @@
   .home .home_content .text_3 {
     font-size: 35px;
   }
+  .home .home_content .button {
+    font-size: 23px;
+    padding: 10px 30px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -170,6 +190,10 @@
   .home .home_content .text_3 {
     font-size: 32px;
   }
+  .home .home_content .button {
+    font-size: 20px;
+    padding: 5px 25px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -180,6 +204,10 @@
   .home .home_content .text_3 {
     font-size: 27px;
   }
+  .home .home_content .button {
+    font-size: 15px;
+    padding: 5px 20px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -189,5 +217,9 @@
 
   .home .home_content .text_3 {
     font-size: 15px;
+  }
+  .home .home_content .button {
+    font-size: 10px;
+    padding: 5px 15px;
   }
 }
