@@ -286,8 +286,12 @@ section .title::after {
   content: "What I know";
 }
 
-.skills .skills_content .column {
-  width: 45%;
+.skills .skills_content .left {
+  width: 40%;
+}
+
+.skills .skills_content .right {
+  width: 55%;
 }
 
 .skills .skills_content .left .text {
@@ -463,6 +467,22 @@ section .title::after {
         -ms-flex: 100%;
             flex: 100%;
   }
+  .skills .skills_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skills .skills_content .left {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .skills .skills_content .right {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -513,6 +533,12 @@ section .title::after {
             column-gap: 10px;
     row-gap: 1em;
   }
+  .about .about_content .right p {
+    display: none;
+  }
+  .skills .skills_content .left {
+    display: none;
+  }
 }
 
 @media (max-width: 375px) {
@@ -525,9 +551,6 @@ section .title::after {
   .home .home_content .button {
     font-size: 10px;
     padding: 5px 15px;
-  }
-  .about .about_content .right p {
-    display: none;
   }
   .about .about_content .right .buttons {
     display: -ms-grid;
