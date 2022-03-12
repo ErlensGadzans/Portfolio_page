@@ -1,20 +1,18 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-decoration: none;
 }
 
 .button_red_transparent {
-  background: #f74a39;
+  background: rgba(247, 74, 57, 255);
   color: white;
   font-size: 20px;
   font-weight: 500;
   padding: 10px 30px;
   border-radius: 5px;
-  border: 2px solid #f74a39;
-  -webkit-transition: all 0.3s ease;
+  border: 2px solid rgba(247, 74, 57, 255);
   transition: all 0.3s ease;
 }
 
@@ -26,13 +24,12 @@
   /* background-color: rgba(247, 74, 57, 255); */
   font-family: "Ubuntu", sans-serif;
   padding: 30px 0;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .sticky {
   padding: 15px 0;
-  background: #f74a39;
+  background: rgba(247, 74, 57, 255);
 }
 
 .max_width {
@@ -42,15 +39,9 @@
 }
 
 .navbar .max_width {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar .logo a {
@@ -60,15 +51,13 @@
 }
 
 .navbar .logo a span {
-  color: #f74a39;
-  -webkit-transition: all 0.3s ease;
+  color: rgba(247, 74, 57, 255);
   transition: all 0.3s ease;
 }
 
 .sticky .logo a span {
   color: white;
 }
-
 .navbar .menu li {
   /* list-style: none; */
   display: inline-block;
@@ -79,18 +68,16 @@
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
-  -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
 .navbar .menu li a:hover {
-  color: #f74a39;
+  color: rgba(247, 74, 57, 255);
 }
 
 .sticky .menu li a:hover {
   color: white;
 }
-
 .menu_btn {
   color: white;
   font-size: 23px;
@@ -99,9 +86,8 @@
 }
 
 /* Home section*/
+
 .home {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background: url("./img/banner.jpg") no-repeat;
   background-size: cover;
@@ -111,7 +97,6 @@
   min-height: 500px;
   font-family: "Ubuntu", sans-serif;
 }
-
 .home .max_width {
   width: 100%;
 }
@@ -132,26 +117,24 @@
 }
 
 .home .home_content .text_3 span {
-  color: #f74a39;
+  color: rgba(247, 74, 57, 255);
   font-weight: 500;
 }
-
 .home .home_content .button {
   display: inline-block;
-  background: #f74a39;
+  background: rgba(247, 74, 57, 255);
   color: white;
   font-size: 25px;
   padding: 12px 36px;
   border-radius: 5px;
   margin-top: 20px;
-  border: 2px solid #f74a39;
-  -webkit-transition: all 0.3s ease;
+  border: 2px solid rgba(247, 74, 57, 255);
   transition: all 0.3s ease;
 }
 
 .home .home_content .button:hover {
   background: none;
-  color: #f74a39;
+  color: rgba(247, 74, 57, 255);
 }
 
 /*About section*/
@@ -180,8 +163,7 @@ section {
   width: 180px;
   height: 3px;
   background: black;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .about .title::after {
@@ -191,40 +173,31 @@ section {
   left: 50%;
   font-size: 20px;
   padding: 2px;
-  color: #f74a39;
+  color: rgba(247, 74, 57, 255);
   background: white;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .about .about_content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   /* flex-wrap: wrap; */
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .about .about_content .left img {
   width: 400px;
   height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 5px;
 }
-
 .about .about_content .left {
   width: 45%;
 }
 
 .about .about_content .right p a {
   text-decoration: none;
-  color: #f74a39;
+  color: rgba(247, 74, 57, 255);
 }
 
 .about .about_content .right {
@@ -238,7 +211,7 @@ section {
 }
 
 .about .about_content .text span {
-  color: #f74a39;
+  color: rgba(247, 74, 57, 255);
 }
 
 .about .about_content .right p {
@@ -246,24 +219,35 @@ section {
 }
 
 .about .about_content .right .buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 15px;
 }
 
 .about .about_content .right .buttons .icon:hover {
-  color: #f74a39;
+  color: rgba(247, 74, 57, 255);
   background: none;
 }
 
+// .about .about_content .right .cv {
+//   display: inline-block;
+//   margin-top: 20px;
+//   border: 2px solid rgba(247, 74, 57, 255);
+//   transition: all 0.3s ease;
+// }
+
+// .about .about_content .right .icons .cv:hover {
+//   color: rgba(247, 74, 57, 255);
+//   background: none;
+// }
+// .about .about_content .right a:hover {
+//   color: rgba(247, 74, 57, 255);
+//   background: none;
+// }
+
 /* Responive site*/
+
 @media (max-width: 900px) {
   .max_width {
     padding: 0 50px;
@@ -272,9 +256,11 @@ section {
     display: block;
     z-index: 999;
   }
+
   .menu_btn i.active:before {
     content: "\f00d";
   }
+
   .navbar .menu {
     position: fixed;
     background: black;
@@ -283,31 +269,28 @@ section {
     left: -100%;
     top: 0;
     padding-top: 80px;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
+
   .navbar .menu.active {
     left: 0;
   }
+
   .navbar .menu li {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
+
   .navbar .menu li a {
     font-size: 25px;
     margin: 20px 0;
   }
+
   .home .home_content .text_2 {
     font-size: 70px;
   }
+
   .home .home_content .text_3 {
     font-size: 35px;
   }
@@ -324,6 +307,7 @@ section {
   .home .home_content .text_2 {
     font-size: 60px;
   }
+
   .home .home_content .text_3 {
     font-size: 32px;
   }
@@ -337,6 +321,7 @@ section {
   .home .home_content .text_2 {
     font-size: 50px;
   }
+
   .home .home_content .text_3 {
     font-size: 27px;
   }
@@ -350,6 +335,7 @@ section {
   .home .home_content .text_2 {
     font-size: 40px;
   }
+
   .home .home_content .text_3 {
     font-size: 15px;
   }
@@ -358,4 +344,3 @@ section {
     padding: 5px 15px;
   }
 }
-/*# sourceMappingURL=style.css.map */
