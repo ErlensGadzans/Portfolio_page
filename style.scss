@@ -14,6 +14,7 @@
   border-radius: 5px;
   border: 2px solid rgba(247, 74, 57, 255);
   transition: all 0.3s ease;
+ 
 }
 
 section {
@@ -21,7 +22,8 @@ section {
 }
 
 .about,
-.skills {
+.skills,
+.projects {
   font-family: "Poppins", sans-serif;
 }
 
@@ -71,12 +73,12 @@ section .title::after {
 
 /* Nav bar*/
 .navbar {
-  position: fixed;
-  width: 100%;
-  z-index: 999;
+  position: fixed ;
+  width: 100% ;
+  z-index: 999 ;
   /* background-color: rgba(247, 74, 57, 255); */
   font-family: "Ubuntu", sans-serif;
-  padding: 30px 0;
+  padding: 30px 0 ;
   transition: all 0.3s ease;
 }
 
@@ -92,15 +94,18 @@ section .title::after {
 }
 
 .navbar .max_width {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+ 
+  display: flex ;
+  justify-content: space-between ;
+  align-items: center ;
 }
 
 .navbar .logo a {
   color: white;
   font-size: 35px;
   font-weight: 600;
+  text-decoration: none;
+  
 }
 
 .navbar .logo a span {
@@ -126,6 +131,7 @@ section .title::after {
 
 .navbar .menu li a:hover {
   color: rgba(247, 74, 57, 255);
+  text-decoration: none;
 }
 
 .sticky .menu li a:hover {
@@ -188,6 +194,7 @@ section .title::after {
 .home .home_content .button:hover {
   background: none;
   color: rgba(247, 74, 57, 255);
+  text-decoration: none;
 }
 
 /*About section*/
@@ -235,6 +242,7 @@ section .title::after {
 .about .about_content .right .buttons .icon:hover {
   color: rgba(247, 74, 57, 255);
   background: none;
+  text-decoration: none;
 }
 
 /*Skills section*/
@@ -323,6 +331,76 @@ section .title::after {
 .skills .skills_content .right .php::before {
   width: 5%;
 }
+
+/*Projects section*/
+
+.projects .title::after {
+  content: "What I create";
+}
+.projects .carousel .rowcards{
+  display:flex;
+}
+
+.projects .carousel .card {
+  background: lightgrey;
+  border-radius: 5px;
+  padding: 25px 35px;
+  margin: 0 10px;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.projects .carousel .card:hover{
+  background: rgba(247, 74, 57, 255)
+}
+
+.projects .carousel .card .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.projects .carousel .card:hover .box{
+  transform: scale(1.05);
+}
+.projects .carousel .card .text{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+.projects .carousel .card img{
+height:150px;
+  width: 100%;
+  object-fit: cover;
+  border: 5px solid rgba(247, 74, 57, 255);
+  transition: all 0.3s ease;
+}
+
+.projects .carousel .card:hover img{
+  border: 5px solid white
+}
+
+.projects .carousel-indicators{
+  left: 0;
+  top:auto;
+  bottom: -70px
+}
+
+.projects .carousel-indicators li{
+ background: lightgrey;
+ border-radius: 50%;
+ width: 15px;
+ height: 15px
+}
+
+.projects .carousel-indicators .active{
+  background: rgba(247, 74, 57, 255)
+  
+ }
+
+
 
 /* Responive site*/
 

@@ -24,7 +24,8 @@ section {
 }
 
 .about,
-.skills {
+.skills,
+.projects {
   font-family: "Poppins", sans-serif;
 }
 
@@ -120,6 +121,7 @@ section .title::after {
   color: white;
   font-size: 35px;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .navbar .logo a span {
@@ -148,6 +150,7 @@ section .title::after {
 
 .navbar .menu li a:hover {
   color: #f74a39;
+  text-decoration: none;
 }
 
 .sticky .menu li a:hover {
@@ -215,6 +218,7 @@ section .title::after {
 .home .home_content .button:hover {
   background: none;
   color: #f74a39;
+  text-decoration: none;
 }
 
 /*About section*/
@@ -269,6 +273,7 @@ section .title::after {
 .about .about_content .right .buttons .icon:hover {
   color: #f74a39;
   background: none;
+  text-decoration: none;
 }
 
 /*Skills section*/
@@ -357,6 +362,92 @@ section .title::after {
 
 .skills .skills_content .right .php::before {
   width: 5%;
+}
+
+/*Projects section*/
+.projects .title::after {
+  content: "What I create";
+}
+
+.projects .carousel .rowcards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projects .carousel .card {
+  background: lightgrey;
+  border-radius: 5px;
+  padding: 25px 35px;
+  margin: 0 10px;
+  text-align: center;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.projects .carousel .card:hover {
+  background: #f74a39;
+}
+
+.projects .carousel .card .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.projects .carousel .card:hover .box {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.projects .carousel .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+.projects .carousel .card img {
+  height: 150px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 5px solid #f74a39;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.projects .carousel .card:hover img {
+  border: 5px solid white;
+}
+
+.projects .carousel-indicators {
+  left: 0;
+  top: auto;
+  bottom: -70px;
+}
+
+.projects .carousel-indicators li {
+  background: lightgrey;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.projects .carousel-indicators .active {
+  background: #f74a39;
 }
 
 /* Responive site*/
