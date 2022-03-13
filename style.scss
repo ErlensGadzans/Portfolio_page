@@ -26,7 +26,9 @@ section {
 
 .about,
 .skills,
-.projects {
+.projects,
+.contact,
+.footer {
   font-family: "Poppins", sans-serif;
 }
 
@@ -42,7 +44,8 @@ section {
   text-align: justify;
 }
 
-section .title {
+section .title,
+footer .title {
   position: relative;
   font-family: "Ubuntu", sans-serif;
   text-align: center;
@@ -513,7 +516,45 @@ height:150px;
   .contact .center form .button_area button:hover{
     background: none;
     color: $color_accent;
+  }
+
+
+  /*Footer section*/
+footer {
+  background:lightgrey
+}
  
+.footer .footer_content{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+  .footer .footer_content .icons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px 0;
+  }
+
+  .footer .footer_content .icons a{
+  margin:0 30px;
+  color:$color_accent;
+  text-decoration: none;
+  font-size:27px;
+  }
+
+  .footer .footer_content .footer_menu {
+  padding-bottom: 20px;
+  }
+
+  .footer .footer_content .footer_menu a{
+    text-decoration: none;
+    color:black;
+    margin:0 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+
   }
 
 

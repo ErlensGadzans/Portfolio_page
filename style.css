@@ -25,7 +25,9 @@ section {
 
 .about,
 .skills,
-.projects {
+.projects,
+.contact,
+.footer {
   font-family: "Poppins", sans-serif;
 }
 
@@ -48,7 +50,8 @@ section {
   text-align: justify;
 }
 
-section .title {
+section .title,
+footer .title {
   position: relative;
   font-family: "Ubuntu", sans-serif;
   text-align: center;
@@ -564,6 +567,56 @@ section .title::after {
 .contact .center form .button_area button:hover {
   background: none;
   color: #f74a39;
+}
+
+/*Footer section*/
+footer {
+  background: lightgrey;
+}
+
+.footer .footer_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer_content .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.footer .footer_content .icons a {
+  margin: 0 30px;
+  color: #f74a39;
+  text-decoration: none;
+  font-size: 27px;
+}
+
+.footer .footer_content .footer_menu {
+  padding-bottom: 20px;
+}
+
+.footer .footer_content .footer_menu a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
 }
 
 /* Responive site*/
