@@ -413,24 +413,45 @@ section .title::after {
           transform: scale(1.05);
 }
 
-.projects .carousel .card .text {
-  font-size: 25px;
-  font-weight: 500;
-  margin: 10px 0 7px 0;
-}
-
 .projects .carousel .card img {
   height: 150px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border: 5px solid #f74a39;
+  border-radius: 5px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .projects .carousel .card:hover img {
   border: 5px solid white;
+}
+
+.projects .carousel .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+.projects .carousel .card .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects .carousel .card a {
+  color: #f74a39;
+  text-decoration: none;
+}
+
+.projects .carousel .card:hover a {
+  color: white;
 }
 
 .projects .carousel-indicators {
