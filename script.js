@@ -10,7 +10,6 @@ window.onscroll = function () {
   if (window.scrollY > 500) {
     console.log(scroll);
     scroll.classList.add("show");
-
     document.querySelector(".scroll_btn").onclick = function () {
       window.scrollTo({
         top: 0,

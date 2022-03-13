@@ -1,5 +1,8 @@
 $color_accent: rgba(247, 74, 57, 255);
 
+html{
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;
@@ -22,6 +25,7 @@ $color_accent: rgba(247, 74, 57, 255);
 
 section {
   padding: 100px 0;
+
 }
 
 .about,
@@ -231,6 +235,7 @@ pointer-events: auto;
 }
 
 /*About section*/
+
 
 .about .title::after {
   content: "Who I am";
