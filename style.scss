@@ -1,3 +1,6 @@
+$color_accent: rgba(247, 74, 57, 255);
+
+
 * {
   margin: 0;
   padding: 0;
@@ -6,13 +9,13 @@
 }
 /*ALL SIMILILAR CONTENT STYLING CODE*/
 .button_red_transparent {
-  background: rgba(247, 74, 57, 255);
+  background: $color_accent;
   color: white;
   font-size: 20px;
   font-weight: 500;
   padding: 10px 30px;
   border-radius: 5px;
-  border: 2px solid rgba(247, 74, 57, 255);
+  border: 2px solid $color_accent;
   transition: all 0.3s ease;
  
 }
@@ -66,7 +69,7 @@ section .title::after {
   left: 50%;
   font-size: 20px;
   padding: 2px;
-  color: rgba(247, 74, 57, 255);
+  color: $color_accent;
   background: white;
   transform: translateX(-50%);
 }
@@ -84,7 +87,7 @@ section .title::after {
 
 .sticky {
   padding: 15px 0;
-  background: rgba(247, 74, 57, 255);
+  background: $color_accent;
 }
 
 .max_width {
@@ -109,7 +112,7 @@ section .title::after {
 }
 
 .navbar .logo a span {
-  color: rgba(247, 74, 57, 255);
+  color: $color_accent;
   transition: all 0.3s ease;
 }
 
@@ -130,7 +133,7 @@ section .title::after {
 }
 
 .navbar .menu li a:hover {
-  color: rgba(247, 74, 57, 255);
+  color: $color_accent;
   text-decoration: none;
 }
 
@@ -176,24 +179,24 @@ section .title::after {
 }
 
 .home .home_content .text_3 span {
-  color: rgba(247, 74, 57, 255);
+  color: $color_accent;
   font-weight: 500;
 }
 .home .home_content .button {
   display: inline-block;
-  background: rgba(247, 74, 57, 255);
+  background: $color_accent;
   color: white;
   font-size: 25px;
   padding: 12px 36px;
   border-radius: 5px;
   margin-top: 20px;
-  border: 2px solid rgba(247, 74, 57, 255);
+  border: 2px solid $color_accent;
   transition: all 0.3s ease;
 }
 
 .home .home_content .button:hover {
   background: none;
-  color: rgba(247, 74, 57, 255);
+  color: $color_accent;
   text-decoration: none;
 }
 
@@ -215,7 +218,7 @@ section .title::after {
 
 .about .about_content .right p a {
   text-decoration: none;
-  color: rgba(247, 74, 57, 255);
+  color: $color_accent;
 }
 
 .about .about_content .right {
@@ -229,7 +232,7 @@ section .title::after {
 }
 
 .about .about_content .text span {
-  color: rgba(247, 74, 57, 255);
+  color: $color_accent;
 }
 
 .about .about_content .right .buttons {
@@ -240,7 +243,7 @@ section .title::after {
 }
 
 .about .about_content .right .buttons .icon:hover {
-  color: rgba(247, 74, 57, 255);
+  color: $color_accent;
   background: none;
   text-decoration: none;
 }
@@ -305,7 +308,7 @@ section .title::after {
   height: 100%;
   // left: 0;
   // top: 0;
-  background: rgba(247, 74, 57, 255);
+  background: $color_accent;
 }
 
 .skills .skills_content .right .html::before {
@@ -352,7 +355,7 @@ section .title::after {
 }
 
 .projects .carousel .card:hover{
-  background: rgba(247, 74, 57, 255)
+  background: $color_accent;
 }
 
 .projects .carousel .card .box{
@@ -370,7 +373,7 @@ section .title::after {
 height:150px;
   width: 100%;
   object-fit: cover;
-  border: 5px solid rgba(247, 74, 57, 255);
+  border: 5px solid $color_accent;
   border-radius: 5px;
   transition: all 0.3s ease;
 }
@@ -392,7 +395,7 @@ height:150px;
 }
 
 .projects .carousel .card a{
-  color: rgba(247, 74, 57, 255);
+  color: $color_accent;
   text-decoration: none;
 }
 
@@ -415,10 +418,103 @@ height:150px;
 }
 
 .projects .carousel-indicators .active{
-  background: rgba(247, 74, 57, 255)
+  background: $color_accent;
   
  }
+ /*CONTACT FORM SECTION*/
 
+.contact{
+  color:white;
+  background: black;
+}
+.contact .title::before {
+  background: white;
+}
+
+ .contact .title::after{
+  background: black;
+   content: "Get in touch";
+ }
+
+ .contact .contact_content .text{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+ .contact .contact_content .center{
+  width:65%;
+  margin:auto;
+ }
+
+ .contact .contact_content .center .fields{
+ display:flex;
+ }
+
+ .contact .center .field, 
+ .contact .center .fields .field{
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+  }
+
+  .contact .center form .textarea{
+    height:150px
+  }
+
+  .contact .center form .field input,
+  .contact .center form .textarea textarea
+  {
+    height: 100%;
+    width: 100%;
+    border: 1px solid gray;
+    background: #222;
+    color:white;
+    border-radius: 5px;
+    outline: none;
+    padding:0 15px;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .contact .center form .name{
+    margin-right: 10px;
+  }
+
+  .contact .center form .email{
+    margin-left: 10px;
+  }
+
+  .contact .center form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+  }
+
+  .contact .center form .button_area {
+    height:47px;
+    width: 170px;
+  }
+
+  .contact .center form .button_area button{
+    width: 100%;
+    height: 100%;
+    background: $color_accent;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+
+    font-size:20px;
+    font-weight: 500;
+   border-radius: 5px;
+    border: 2px solid $color_accent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .contact .center form .button_area button:hover{
+    background: none;
+    color: $color_accent;
+ 
+  }
 
 
 /* Responive site*/
@@ -532,7 +628,9 @@ height:150px;
     flex-direction: column;
   }
 
-  .skills .skills_content .left {
+  .skills .skills_content .left,
+  .contact .contact_content .center
+  {
     width: 100%;
     margin-bottom: 25px;
   }

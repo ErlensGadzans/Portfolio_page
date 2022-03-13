@@ -471,6 +471,101 @@ section .title::after {
   background: #f74a39;
 }
 
+/*CONTACT FORM SECTION*/
+.contact {
+  color: white;
+  background: black;
+}
+
+.contact .title::before {
+  background: white;
+}
+
+.contact .title::after {
+  background: black;
+  content: "Get in touch";
+}
+
+.contact .contact_content .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact .contact_content .center {
+  width: 65%;
+  margin: auto;
+}
+
+.contact .contact_content .center .fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact .center .field,
+.contact .center .fields .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.contact .center form .textarea {
+  height: 150px;
+}
+
+.contact .center form .field input,
+.contact .center form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid gray;
+  background: #222;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact .center form .name {
+  margin-right: 10px;
+}
+
+.contact .center form .email {
+  margin-left: 10px;
+}
+
+.contact .center form .textarea textarea {
+  padding-top: 10px;
+  resize: none;
+}
+
+.contact .center form .button_area {
+  height: 47px;
+  width: 170px;
+}
+
+.contact .center form .button_area button {
+  width: 100%;
+  height: 100%;
+  background: #f74a39;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 2px solid #f74a39;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.contact .center form .button_area button:hover {
+  background: none;
+  color: #f74a39;
+}
+
 /* Responive site*/
 @media (max-width: 1169px) {
   .about .about_content .left img {
@@ -588,7 +683,8 @@ section .title::after {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .skills .skills_content .left {
+  .skills .skills_content .left,
+  .contact .contact_content .center {
     width: 100%;
     margin-bottom: 25px;
   }
