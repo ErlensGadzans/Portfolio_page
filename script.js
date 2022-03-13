@@ -1,3 +1,16 @@
+//Home page animation Typing effect
+let i = 0;
+const text = "  Software Developer";
+let speed = 200;
+window.onload = function typeEffect() {
+  const emptySpan = document.getElementById("animated_text");
+  emptySpan.innerHTML += text.charAt(i);
+  i++;
+  setTimeout(typeEffect, speed);
+};
+
+typeEffect();
+
 //scroll function Addind & removing navbar background
 window.onscroll = function () {
   let nav = document.querySelector(".navbar");

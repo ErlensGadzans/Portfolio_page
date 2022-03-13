@@ -684,6 +684,7 @@ footer {
   .navbar .menu {
     position: fixed;
     background: black;
+    opacity: 0.8;
     height: 100vh;
     width: 100%;
     left: -100%;
@@ -710,6 +711,7 @@ footer {
   .navbar .menu li a {
     font-size: 25px;
     margin: 20px 0;
+    display: block;
   }
   .home .home_content .text_2 {
     font-size: 70px;
