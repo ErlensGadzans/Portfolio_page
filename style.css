@@ -92,6 +92,7 @@ section .title::after {
 /* Nav bar*/
 .navbar {
   position: fixed;
+  display: block;
   width: 100%;
   z-index: 999;
   /* background-color: rgba(247, 74, 57, 255); */

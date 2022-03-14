@@ -84,6 +84,7 @@ section .title::after {
 /* Nav bar*/
 .navbar {
   position: fixed ;
+  display:block;
   width: 100% ;
   z-index: 999 ;
   /* background-color: rgba(247, 74, 57, 255); */
@@ -104,7 +105,6 @@ section .title::after {
 }
 
 .navbar .max_width {
- 
   display: flex ;
   justify-content: space-between ;
   align-items: center ;
@@ -377,6 +377,7 @@ pointer-events: auto;
 }
 .projects .carousel .rowcards{
   display:flex;
+  
 }
 
 .projects .carousel .card {
