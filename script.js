@@ -9,8 +9,6 @@ window.onload = function typeEffect() {
   setTimeout(typeEffect, speed);
 };
 
-typeEffect();
-
 //scroll function Addind & removing navbar background
 window.onscroll = function () {
   let nav = document.querySelector(".navbar");

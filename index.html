@@ -385,7 +385,7 @@
         <div class="contact_content">
           <div class="column center">
             <div class="text">Message me</div>
-            <form action="#">
+            <form action="ContactForm.php" method="POST">
               <div class="fields">
                 <div class="field name">
                   <input type="text" placeholder="Name" required />
@@ -394,7 +394,7 @@
                   <input type="email" placeholder="Email" required />
                 </div>
               </div>
-              <div class="field">
+              <div class="field subject">
                 <input type="text" placeholder="Subject" required />
               </div>
               <div class="field textarea">
@@ -406,7 +406,7 @@
                 ></textarea>
               </div>
               <div class="button_area">
-                <button type="submit">Send message</button>
+                <button type="submit" name="submit">Send message</button>
               </div>
             </form>
           </div>
