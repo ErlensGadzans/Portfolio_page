@@ -17,17 +17,3 @@ $body .= "Message:" . $message . "\r\n";
 
 
 mail($mailTo, $messageSubject, $body);
-
-?>
-
-
-
-
-
-
-
-// mail($mailTo, $headers, $text);
-// header("Location: index.html?mailsended#contact");
-
-
-// require_once "ContactForm.php"
