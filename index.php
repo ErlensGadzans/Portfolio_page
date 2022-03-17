@@ -296,7 +296,7 @@
       <div class="contact_content">
         <div class="column center">
           <div class="text">Message me</div>
-          <form action="ContactForm.php" method="POST" class="form">
+          <form <?php include("ContactForm.php"); ?> method="POST" class="form">
             <div class="fields">
               <div class="field name">
                 <input type="text" name="name" placeholder="Name" required />
