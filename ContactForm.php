@@ -15,5 +15,7 @@ $body .= "Message:" . $message . "\r\n";
 
 
 
+mail($mailTo, $messageSubject, $body)
+    or die("Error");
 
-mail($mailTo, $messageSubject, $body);
+echo "message send";
