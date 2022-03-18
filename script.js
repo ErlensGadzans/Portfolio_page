@@ -19,7 +19,7 @@ window.onscroll = function () {
     nav.classList.remove("sticky");
   }
   if (window.scrollY > 500) {
-    console.log(scroll);
+    // console.log(scroll);
     scroll.classList.add("show");
     document.querySelector(".scroll_btn").onclick = function () {
       window.scrollTo({

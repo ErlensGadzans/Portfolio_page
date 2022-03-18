@@ -512,6 +512,10 @@ pointer-events: auto;
     font-size: 17px;
     font-family: "Poppins", sans-serif;
   }
+  .contact .center form input:focus,
+  .contact .center form textarea:focus{
+    border: 1px solid $color_accent
+  }
 
   .contact .center form .name{
     margin-right: 10px;
@@ -526,18 +530,22 @@ pointer-events: auto;
     resize: none;
   }
 
+
+
   .contact .center form .button_area {
-    height:47px;
-    width: 170px;
+    height: 47px;
+    //  width: 170px;
+    display:flex;
+  // justify-content: space-between;
+    align-items: center;
   }
 
   .contact .center form .button_area button{
-    width: 100%;
+    width: 170px;
     height: 100%;
     background: $color_accent;
     color: white;
     font-family: "Ubuntu", sans-serif;
-
     font-size:20px;
     font-weight: 500;
    border-radius: 5px;

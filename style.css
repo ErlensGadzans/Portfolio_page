@@ -562,6 +562,11 @@ section .title::after {
   font-family: "Poppins", sans-serif;
 }
 
+.contact .center form input:focus,
+.contact .center form textarea:focus {
+  border: 1px solid #f74a39;
+}
+
 .contact .center form .name {
   margin-right: 10px;
 }
@@ -577,11 +582,16 @@ section .title::after {
 
 .contact .center form .button_area {
   height: 47px;
-  width: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact .center form .button_area button {
-  width: 100%;
+  width: 170px;
   height: 100%;
   background: #f74a39;
   color: white;
