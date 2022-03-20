@@ -56,22 +56,25 @@
         <div class="modal-dialog modal-notify modal-success" role="document">
           <div class="modal-content">
             <div class="modal-header" style="background:rgba(1,200,80,255)">
-              <p class="heading lead">Thanks for being awesome!
-              </p>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <button type="button" class="close" id="closeButton" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true" class="white-text">&times;</span>
               </button>
             </div>
             <div class="modal-body">
               <div class="text-center mt-4 mb-4">
-                <h5 style="color:rgba(1,200,80,255)">I will reply as soon as possible.</h5>
+                <h5 style="color:black">I will reply as soon as possible.</h5>
               </div>
             </div>';
         "<script type='text/javascript'>
             $(document).ready(function() {
               $('#centralModalMd').modal('show');
             });
-          </script>";
+ </script>";
+        '<script>
+    $("#centralModalMd").on("hidden.bs.modal", function() {
+      window.location.href="http://erlens.me";
+    });
+  </script>';
       }
       ?>
     </div>
@@ -379,7 +382,13 @@
       $('#centralModalMd').modal('show');
     });
   </script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=GOOGLE_API_KEY&callback=initMap"></script>
+  <script>
+    $("#centralModalMd").on("hidden.bs.modal", function() {
+      window.location.href = "http://erlens.me";
+    });
+  </script>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
 
 
 </body>
