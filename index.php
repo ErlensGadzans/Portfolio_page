@@ -5,14 +5,11 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" />
-
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap");
   </style>
   <link rel="stylesheet" href="style.css" />
-
   <script src="https://kit.fontawesome.com/3aa1bf0feb.js" crossorigin="anonymous"></script>
   <script src="script.js"></script>
   <title>Erlens.me</title>
@@ -31,7 +28,7 @@
         <a href="#">Erlens<span>.me</span></a>
       </div>
       <ul class="menu">
-        <li><a href="#">Home</a></li>
+        <li><a href class="aaa">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -44,7 +41,7 @@
   </nav>
 
   <!--HOME SECTION-->
-  <section class="home" id="home">
+  <section class="scroll_to home" id="home">
     <div class="max_width">
       <div class="home_content">
         <div class="text_1">Hello, My name is</div>
@@ -52,8 +49,32 @@
         <div class="text_3">I'm a<span id="animated_text"></span></div>
         <a href="mailto:erlens.gadzans@gmail.com" class="button">Contact me</a>
       </div>
-    </div>
 
+      <?php if (isset($_GET['success'])) {
+        echo
+        '<div class="modal fade" id="centralModalMd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-notify modal-success" role="document">
+          <div class="modal-content">
+            <div class="modal-header" style="background:rgba(1,200,80,255)">
+              <p class="heading lead">Thanks for being awesome!
+              </p>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" class="white-text">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="text-center mt-4 mb-4">
+                <h5 style="color:rgba(1,200,80,255)">I will reply as soon as possible.</h5>
+              </div>
+            </div>';
+        "<script type='text/javascript'>
+            $(document).ready(function() {
+              $('#centralModalMd').modal('show');
+            });
+          </script>";
+      }
+      ?>
+    </div>
   </section>
 
   <!--ABOUT SECTION-->
@@ -291,21 +312,20 @@
   </section>
 
   <!--CONTACT FORM SECTION-->
-
-
-
-
   <section class="contact" id="contact">
     <div class="max_width">
       <h2 class="title">Contact</h2>
       <div class="contact_content">
-        <div class="column center">
-          <div class="text">Message me</div>
-          <?php if (isset($_GET['success'])) {
-            $Msg = "Your message has been sent!";
-            echo '<div class="alert alert-success">' . $Msg . '</div>';
-          }
-          ?>
+
+        <!--MAP SECTION-->
+        <div class="column left">
+          <div class="text">Located in <span>Riga</span></div>
+          <div id="map"></div>
+        </div>
+
+        <!--CONTACT FORM SECTION-->
+        <div class="column right">
+          <div class="text">Message <span>me</span></div>
           <form action="contactForm.php" method="post" class="form">
             <div class="fields">
               <div class="field name">
@@ -342,10 +362,10 @@
         </div>
         <div class="footer_menu">
           <a href="#">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <a href="#about" class="aaa">About</a>
+          <a href="#skills" class="aaa">Skills</a>
+          <a href="#projects" class="aaa">Projects</a>
+          <a href="#contact" class="aaa">Contact</a>
         </div>
       </div>
     </div>
@@ -354,6 +374,14 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#centralModalMd').modal('show');
+    });
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=GOOGLE_API_KEY&callback=initMap"></script>
+
+
 </body>
 
 </html>

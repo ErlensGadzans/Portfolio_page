@@ -145,6 +145,7 @@ section .title::after {
 .navbar .menu li {
   /* list-style: none; */
   display: inline-block;
+  cursor: pointer;
 }
 
 .navbar .menu li a {
@@ -520,36 +521,62 @@ section .title::after {
   content: "Get in touch";
 }
 
+.contact .contact_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contact_content .left #map {
+  height: 330px;
+  width: 100%;
+  border-radius: 5px;
+}
+
 .contact .contact_content .text {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-.contact .contact_content .center {
-  width: 65%;
-  margin: auto;
+.contact .contact_content .left .text span,
+.contact .contact_content .right .text span {
+  color: #f74a39;
 }
 
-.contact .contact_content .center .fields {
+.contact .contact_content .left {
+  width: 55%;
+}
+
+.contact .contact_content .right {
+  width: 40%;
+}
+
+.contact .contact_content .right .fields {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.contact .center .field,
-.contact .center .fields .field {
+.contact .right .field,
+.contact .right .fields .field {
   height: 45px;
   width: 100%;
   margin-bottom: 15px;
 }
 
-.contact .center form .textarea {
+.contact .right form .textarea {
   height: 150px;
 }
 
-.contact .center form .field input,
-.contact .center form .textarea textarea {
+.contact .right form .field input,
+.contact .right form .textarea textarea {
   height: 100%;
   width: 100%;
   border: 1px solid gray;
@@ -562,25 +589,25 @@ section .title::after {
   font-family: "Poppins", sans-serif;
 }
 
-.contact .center form input:focus,
-.contact .center form textarea:focus {
+.contact .right form input:focus,
+.contact .right form textarea:focus {
   border: 1px solid #f74a39;
 }
 
-.contact .center form .name {
+.contact .right form .name {
   margin-right: 10px;
 }
 
-.contact .center form .email {
+.contact .right form .email {
   margin-left: 10px;
 }
 
-.contact .center form .textarea textarea {
+.contact .right form .textarea textarea {
   padding-top: 10px;
   resize: none;
 }
 
-.contact .center form .button_area {
+.contact .right form .button_area {
   height: 47px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -590,7 +617,7 @@ section .title::after {
           align-items: center;
 }
 
-.contact .center form .button_area button {
+.contact .right form .button_area button {
   width: 170px;
   height: 100%;
   background: #f74a39;
@@ -605,7 +632,7 @@ section .title::after {
   cursor: pointer;
 }
 
-.contact .center form .button_area button:hover {
+.contact .right form .button_area button:hover {
   background: none;
   color: #f74a39;
 }
@@ -741,10 +768,12 @@ footer {
   .about .about_content .right {
     width: 55%;
   }
-  .about .about_content .column {
+  .about .about_content .column,
+  .contact .contact_content .column {
     width: 100%;
   }
-  .about .about_content {
+  .about .about_content,
+  .contact .contact_content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -765,7 +794,8 @@ footer {
             justify-content: center;
     margin: 0 auto 60px;
   }
-  .about .about_content .right {
+  .about .about_content .right,
+  .contact .contact_content .right {
     -webkit-box-flex: 100%;
         -ms-flex: 100%;
             flex: 100%;
@@ -780,12 +810,15 @@ footer {
             flex-direction: column;
   }
   .skills .skills_content .left,
-  .contact .contact_content .center {
+  .contact .contact_content .right {
     width: 100%;
     margin-bottom: 25px;
   }
   .skills .skills_content .right {
     width: 100%;
+  }
+  .contact .contact_content .left {
+    margin: 0 auto 60px;
   }
 }
 
@@ -841,6 +874,9 @@ footer {
     display: none;
   }
   .skills .skills_content .left {
+    display: none;
+  }
+  .contact .contact_content .left {
     display: none;
   }
 }
