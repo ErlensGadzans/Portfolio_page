@@ -9,6 +9,7 @@
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap");
   </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
   <link rel="stylesheet" href="style.css" />
   <script src="https://kit.fontawesome.com/3aa1bf0feb.js" crossorigin="anonymous"></script>
   <script src="script.js"></script>
@@ -223,13 +224,13 @@
                     <div class="card">
                       <div class="single_box box">
                         <div class="img_area">
-                          <img src="./img/covid_tracker.jpg" />
+                          <img src="./img/tictactoe.jpg" />
                         </div>
                         <div class="text">
-                          <h3>Covid tracker</h3>
+                          <h3>Tic Tac Toe</h3>
                           <div class="icons">
-                            <a href="https://covid19-healthdata.herokuapp.com/" target="_blank" class="fa-solid fa-arrow-up-right-from-square"></a>
-                            <a href="https://github.com/ErlensGadzans/Covid-19-tracker-FE" target="_blank" class="fa-solid fa-code"></a>
+                            <a href="https://tictactoegameerlens.000webhostapp.com/" target="_blank" class="fa-solid fa-arrow-up-right-from-square"></a>
+                            <a href="https://github.com/ErlensGadzans/tic_tac_toe" target="_blank" class="fa-solid fa-code"></a>
                           </div>
                         </div>
                       </div>
