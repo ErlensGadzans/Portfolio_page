@@ -303,11 +303,16 @@ pointer-events: auto;
 // }
 
 .skills .skills_content .left {
-  width: 40%;
+  width: 55%;
 }
 
 .skills .skills_content .right {
-  width: 55%;
+  width: 40%;
+}
+
+.skills .skills_content .left .text span,
+.skills .skills_content .left p span{
+  color: $color_accent
 }
 
 .skills .skills_content .left .text {
@@ -368,7 +373,7 @@ pointer-events: auto;
 }
 
 .skills .skills_content .right .php::before {
-  width: 5%;
+  width: 15%;
 }
 
 /*Projects section*/

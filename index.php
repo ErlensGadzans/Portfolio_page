@@ -63,6 +63,7 @@
             </div>
             <div class="modal-body">
               <div class="text-center mt-4 mb-4">
+              <h5 style="color:rgba(1,200,80,255)">Thank you for your message.</h5>
                 <h5 style="color:black">I will reply as soon as possible.</h5>
               </div>
             </div>';
@@ -127,16 +128,15 @@
       <h2 class="title">My skills</h2>
       <div class="skills_content">
         <div class="column left">
-          <div class="text">My skills</div>
+          <div class="text">My <span>skills</span></div>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
-            veniam porro rem. Consequuntur at nemo, possimus quae, nulla
-            aliquam ea sapiente asperiores dignissimos tenetur cupiditate! In
-            repudiandae dolorem aliquid. Expedita maxime quia tempore, debitis
-            eum quam asperiores alias ducimus doloribus officia, incidunt ipsa
-            quasi nesciunt sit dignissimos blanditiis libero. Mollitia autem
-            repudiandae nam incidunt aut repellat voluptatibus sint harum
-            laborum?
+            Since my start of study and practice as a developer almost two and half years ago, I have learned to work with different programming languages and frameworks.
+            <br />
+            I am able to create responsive websites, which are easy to use and built according best practices.
+            Mostly I am working with <span>HTML</span>, <span>CSS</span>, and <span>JS</span>.
+            Recently I learned <span>PHP</span>. In the section "Projects", you may see a couple of projects, which are made on <span>React JS</span> (if Herokku sleeps, then please reload the webpage twice).
+            <br />
+            I am familiar with <span>non-relational</span> databases, and in addition I get use how to work with <span>relational databases</span> as well.
           </p>
         </div>
 
@@ -171,7 +171,7 @@
           </div>
           <div class="bars">
             <div class="info">
-              <span>MySQL</span>
+              <span>NoSQL</span>
               <span>50%</span>
             </div>
             <div class="line mysql"></div>
@@ -179,7 +179,7 @@
           <div class="bars">
             <div class="info">
               <span>PHP</span>
-              <span>5%</span>
+              <span>15%</span>
             </div>
             <div class="line php"></div>
           </div>
@@ -208,13 +208,15 @@
                     <div class="card">
                       <div class="box">
                         <div class="img">
-                          <img src="./img/covid_tracker.jpg" />
+                          <a href="https://weather-eg.herokuapp.com/" target="_blank">
+                            <img src="./img/weatherapp.jpg" />
+                          </a>
                         </div>
                         <div class="text">
-                          <h3>Covid tracker</h3>
+                          <h3>Weather App</h3>
                           <div class="icons">
-                            <a href="https://covid19-healthdata.herokuapp.com/" target="_blank" class="fa-solid fa-arrow-up-right-from-square"></a>
-                            <a href="https://github.com/ErlensGadzans/Covid-19-tracker-FE" target="_blank" class="fa-solid fa-code"></a>
+                            <a href="https://weather-eg.herokuapp.com/" target="_blank" class="fa-solid fa-arrow-up-right-from-square"></a>
+                            <a href="https://github.com/ErlensGadzans/weatherApp" target="_blank" class="fa-solid fa-code"></a>
                           </div>
                         </div>
                       </div>
@@ -224,7 +226,9 @@
                     <div class="card">
                       <div class="single_box box">
                         <div class="img_area">
-                          <img src="./img/tictactoe.jpg" />
+                          <a href="https://tictactoegameerlens.000webhostapp.com/" target="_blank">
+                            <img src="./img/tictactoe.jpg" />
+                          </a>
                         </div>
                         <div class="text">
                           <h3>Tic Tac Toe</h3>
@@ -240,7 +244,9 @@
                     <div class="card">
                       <div class="single_box box">
                         <div class="img_area">
-                          <img src="./img/banner.jpg" />
+                          <a href="https://covid19-healthdata.herokuapp.com/" target="_blank">
+                            <img src="./img/covid_tracker.jpg" />
+                          </a>
                         </div>
                         <div class="text">
                           <h3>Covid tracker</h3>
@@ -262,7 +268,27 @@
                     <div class="card">
                       <div class="box">
                         <div class="img">
-                          <img src="./img/covid_tracker.jpg" />
+                          <a href="https://weather-eg.herokuapp.com/" target="_blank">
+                            <img src="./img/weatherapp.jpg" />
+                          </a>
+                        </div>
+                        <div class="text">
+                          <h3>Weather App</h3>
+                          <div class="icons">
+                            <a href="https://weather-eg.herokuapp.com/" target="_blank" class="fa-solid fa-arrow-up-right-from-square"></a>
+                            <a href="https://github.com/ErlensGadzans/weatherApp" target="_blank" class="fa-solid fa-code"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="card">
+                      <div class="single_box box">
+                        <div class="img_area">
+                          <a href="https://covid19-healthdata.herokuapp.com/" target="_blank">
+                            <img src="./img/covid_tracker.jpg" />
+                          </a>
                         </div>
                         <div class="text">
                           <h3>Covid tracker</h3>
@@ -278,29 +304,15 @@
                     <div class="card">
                       <div class="single_box box">
                         <div class="img_area">
-                          <img src="./img/covid_tracker.jpg" />
+                          <a href="https://tictactoegameerlens.000webhostapp.com/" target="_blank">
+                            <img src="./img/tictactoe.jpg" />
+                          </a>
                         </div>
                         <div class="text">
-                          <h3>Covid tracker</h3>
+                          <h3>Tic Tac Toe</h3>
                           <div class="icons">
-                            <a href="https://covid19-healthdata.herokuapp.com/" target="_blank" class="fa-solid fa-arrow-up-right-from-square"></a>
-                            <a href="https://github.com/ErlensGadzans/Covid-19-tracker-FE" target="_blank" class="fa-solid fa-code"></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                    <div class="card">
-                      <div class="single_box box">
-                        <div class="img_area">
-                          <img src="./img/banner.jpg" />
-                        </div>
-                        <div class="text">
-                          <h3>Covid tracker</h3>
-                          <div class="icons">
-                            <a href="https://covid19-healthdata.herokuapp.com/" target="_blank" class="fa-solid fa-arrow-up-right-from-square"></a>
-                            <a href="https://github.com/ErlensGadzans/Covid-19-tracker-FE" target="_blank" class="fa-solid fa-code"></a>
+                            <a href="https://tictactoegameerlens.000webhostapp.com/" target="_blank" class="fa-solid fa-arrow-up-right-from-square"></a>
+                            <a href="https://github.com/ErlensGadzans/tic_tac_toe" target="_blank" class="fa-solid fa-code"></a>
                           </div>
                         </div>
                       </div>
